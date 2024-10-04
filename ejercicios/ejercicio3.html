@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>HTML5 Video Video y subtitulos Example</title>
   <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
   <style>
   body   
@@ -13,7 +14,7 @@
       background-color: #e4f3c7;
   }
  
-          .title {
+          .h1 {
               text-align: center;
               font-size: 48px;
               font-weight: bold;
@@ -28,12 +29,13 @@
 </head>
 <body>
   
-    <div class="title">HTML5 Video Video y subtitulos</a> Example</h1>
-  
+    <header>
+      <h1>HTML5 Video Video y subtitulos Example</h1>
+    </header>
   <section>
     <video width="600" height="400" controls>
       <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4" type="video/mp4">
-          <track label="pt" kind="subtitles" srclang="pt" src="./subtitles/friday.vtt" default/>
+      <track label="pt" kind="subtitles" srclang="pt" src="./subtitles/friday.vtt" default lang="en"/>
     </video>
   </section>
 </body>
